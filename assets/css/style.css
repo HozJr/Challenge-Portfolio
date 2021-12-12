@@ -18,6 +18,7 @@ flex-wrap: wrap;
 position: -webkit-sticky;
 position: sticky;
 top: 0;
+z-index: 99;
 }
 
 header h1 {
@@ -78,8 +79,8 @@ header nav ul li a {
     display: flex;
 }
 
-.me {
-    width: 100%;
+.me, .contact {
+    width:100%;
     text-align: left;
     margin: 2.5%;
     font-size: 18px;
@@ -88,7 +89,8 @@ header nav ul li a {
     flex-wrap: flex;
 }
 
-.me h2 {
+.me h2, .contact h2 {
+    width: 80%;
     font-style: italic;
     font-size: 30px;
     color: var(--blue);
@@ -107,4 +109,101 @@ header nav ul li a {
     border-radius: 15px;
     display: flex;
     text-align: left;
+}
+
+.contact h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--blue);
+    margin: 6%;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--blue);
+    text-decoration-line: underline;
+}
+
+.contact nav {
+    margin: 7px 0;
+    display: flex;
+
+}
+
+.contact nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.contact nav ul li a {
+    padding: 10px 90px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.Run-Buddy {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+.flex-2 {
+    display: flex;
+    flex: 200px;
+
+    justify-content: center;
+    gap: 2%;
+}
+
+.flex-3 {
+    display: flex;
+    flex: 200px;
+    padding: 20px;
+    justify-content: center;
+    gap: 2%;
+}
+
+.run-img {
+Height: 95%;
+width: 82%;
+justify-content: right;
+border-radius: 8px;
+border: 3px #C18D21 solid;
+opacity: 85%;
+
+}
+
+.run-img:hover {
+    opacity: 100%;
+}
+.img {
+    border-radius: 8px;
+    border: 3px #C18D21 solid;
+    opacity: 85%;
+}
+.img:hover {
+    opacity: 100%;
+}
+
+.examples {
+    display: flex;
+
+}
+
+.examples h2 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--blue);
+    margin: 2%;
+    padding: 60px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-right-style: solid;
+    border-right-width: thick;
+    border-right-color: var(--blue);
 }
