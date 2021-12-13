@@ -1,14 +1,17 @@
+/* Variable for color */
 :root {
     --blue: #92c5de;
 
 }
 
+/* Overall setup */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Header Portion */
 header {
 padding: 15px 35px;
 background-color: #61646FFF;
@@ -53,6 +56,7 @@ header nav ul li a {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Hero Section */
 .hero {
     background-image: url("../images/wood.jpg");
     background-size: 500px;
@@ -117,6 +121,11 @@ header nav ul li a {
     border-radius: 15px;
     display: flex;
     text-align: left;
+}
+
+.profile-img {
+    width: 60%;
+    height: 78%;
 }
 
 .contact a {
@@ -241,3 +250,88 @@ text-align: center;
 footer h2 {
     color: var(--blue);
 }
+
+     /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+     @media screen and (max-width: 980px) {
+        header {
+            padding-bottom: 0;
+            justify-content: center;
+            position: relative;
+        }
+
+        header h1 {
+            width: 100%;
+            text-align: center;
+        }
+
+        header nav ul {
+            margin-top: 20px;
+            width: 100%;
+
+        }
+
+        header nav ul li a {
+            font-size: 20px;
+            justify-content: right;
+        }
+
+
+        footer h2 {
+            text-align: center;
+            width: 100%;
+        }
+
+        .hero {
+            width: 100%;
+            text-align: center;
+        }
+
+        .section-title {
+            width: 80%;
+        }
+
+        .examples, .Run-Buddy, .flex-2, .flex-3 {
+            flex: 0 70%;
+        }
+
+        .text-box {
+            font-size: 10px;
+        }
+
+     }
+
+     /* MEDIA QUERY FOR TABLETS AND SMALLER */
+     @media screen and (max-width: 768px) {
+        section {
+            padding: 30px 15px;
+        }
+
+        .img {
+            flex: 0 32%;
+            margin-right: 0;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+     }
+
+     /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+     @media screen and (max-width: 575px) {
+
+        .section-title {
+            width: 95%;
+        }
+
+        .me p {
+            width: 100%;
+        }
+
+        .examples, .Run-Buddy, .flex-2, .flex-3 {
+            flex: 0 100%;
+        }
+
+        .contact{
+            text-align: center;
+        }
+
+     }
