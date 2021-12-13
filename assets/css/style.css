@@ -80,11 +80,12 @@ header nav ul li a {
 }
 
 .profile-img {
-    width: 20%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-self: left;
-    margin: 1.0%;
+    border: 3px var(--blue) solid;
+    max-width: 300px;
+    max-height: 300px;
+    margin-right: 20px;
+    float: inline-start;
+    align-content: left;
 }
 
   .flex-row {
@@ -114,19 +115,17 @@ header nav ul li a {
 }
 
 .subclass {
-    padding: 10px;
+    padding: 40px;
     color: var(--blue);
-    width: 70%;
+    width: 80%;
     margin: 0%;
     border-radius: 15px;
     display: flex;
-    text-align: left;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
 }
 
-.profile-img {
-    width: 60%;
-    height: 78%;
-}
 
 .contact a {
     text-decoration: underline;
